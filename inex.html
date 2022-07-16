@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="row bg-white">
+            <h1>hulu</h1>
+            <div class="cost position-absolute">
+                GET $10
+            </div>
+            <nav class="col-auto ms-4 text-center px-0">
+                <ul class="p-0">
+                    <li><i onclick="tabs(this)" class="bi-person-fill" style="color: #3FB6A8;"></i></li>
+                    <li><i onclick="tabs(this)" class="bi-credit-card-fill"></i></li>
+                    <li><i onclick="tabs(this)" class="bi-laptop"></i></li>
+                    <li><i onclick="tabs(this)" class="bi-list-check"></i></li>
+                    <li><i onclick="tabs(this)" class="bi-gear-fill"></i></li>
+            </nav>
+            <div class="col" id="pages">
+                <div class="d-flex flex-column px-5 position-absolute w-75 transition"  id="bi-person-fill">
+                    <h3 class="mt-5 mb-4">Personal Info</h3>
+                    <form class="d-flex flex-column w-75">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" id="name">
+                        <label for="date">BIRTHDAY</label>
+                        <input type="text" id="date">
+                        <label for="gender">GENDER</label>
+                        <input type="text" id="gender">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email">
+                        <label for="pass">PASSWORD</label>
+                        <input type="text" id="pass">
+                    </form>
+                </div>
+                <div class="d-flex flex-column px-5 position-absolute w-75 transition" style="opacity:0;visibility: hidden;" id="bi-credit-card-fill">
+                    <h3 class="mt-5 mb-4">Payment Info</h3>
+                    <form class="d-flex flex-column w-75">
+                        <label for="payment">PAYMENT METHOD</label>
+                        <input type="text" id="payment">
+                        <label for="billing">BILLING ADDRES</label>
+                        <input type="text" id="billing">
+                        <label for="zip">ZIPCODE</label>
+                        <input type="number" id="zip">
+                        <label for="history">BILLING HISTORY</label>
+                        <input type="text" id="history">
+                        <label for="pass">REDEEM GIFT SUBSCRIPTION</label>
+                        <input type="text" id="pass">
+                    </form>
+                </div>
+                <div class="d-flex flex-column px-5 position-absolute w-75 transition" style="opacity:0;visibility: hidden;" id="bi-laptop">
+                    <h3 class="mt-5 mb-4">Your Subscription</h3>
+                    <form class="d-flex flex-column w-75">
+                        <label for="PAYMENT">PAYMENT DATE</label>
+                        <input type="text" id="PAYMENT">
+                        <label for="CHARGE">YOUR NEXT CHARGE</label>
+                        <input type="text" id="CHARGE">
+                        <label for="HULU">HULU BASE PLAN</label>
+                        <input type="text" id="HULU">
+                        <label for="ADD-ONS">ADD-ONS</label>
+                        <input type="text" id="ADD-ONS">
+                        <label for="RECURRING">MONTHLY RECURRING TOTAL</label>
+                        <input type="text" id="RECURRING">
+                    </form>
+                </div>
+                <div class="d-flex flex-column px-5 position-absolute w-75 transition" style="opacity:0;visibility: hidden;" id="bi-list-check">
+                    <h3 class="mt-5 mb-4">Privacy Setting</h3>
+                    <form class="d-flex flex-column w-75">
+                        <label for="NOTIFICATION">MANAGE EMAIL NOTIFICATION</label>
+                        <input type="text" id="NOTIFICATION">
+                        <label for="MANAGE">MANAGE PRIVACY SETTING</label>
+                        <input type="text" id="MANAGE">
+                        <label for="TERMS">VIEW TERMS OF USE</label>
+                        <input type="text" id="TERMS">
+                        <label for="PERSONLIZE">PERSONLIZE AD EXPERIENCE</label>
+                        <input type="text" id="PERSONLIZE">
+                        <label for="PROTEXT">PROTEXT YOUR ACCONT</label>
+                        <input type="text" id="PROTEXT">
+                    </form>
+                </div>
+                <div class="d-flex flex-column px-5 position-absolute w-75 transition" style="opacity:0;visibility: hidden;" id="bi-gear-fill">
+                    <h3 class="mt-5 mb-4">Account Setting</h3>
+                    <form class="d-flex flex-column w-75">
+                        <label for="SYNC">SYNC WATCHLIST TO MY STUFF</label>
+                        <input type="text" id="SYNC">
+                        <label for="HOLD">HOLD YOUR SUBSCRIPTION</label>
+                        <input type="text" id="HOLD">
+                        <label for="SUBSCRIPTION">CANCEL YOUR SUBSCRIPTION</label>
+                        <input type="text" id="SUBSCRIPTION">
+                        <label for="DEVICES">YOUR DEVICES</label>
+                        <input type="text" id="DEVICES">
+                        <label for="REFERRALS">REFERRALS</label>
+                        <input type="text" id="REFERRALS">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="js/master.js"></script>
+</body>
+
+</html>
